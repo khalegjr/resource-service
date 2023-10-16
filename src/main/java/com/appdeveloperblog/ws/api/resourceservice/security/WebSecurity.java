@@ -16,7 +16,7 @@ public class WebSecurity {
         // Configure Http Security
         http.authorizeHttpRequests(authz ->
                         authz
-                                .requestMatchers(HttpMethod.GET, "/users")
+                                .requestMatchers(HttpMethod.GET, "/users/status/check")
                                 .hasAuthority("SCOPE_profile")
                                 .anyRequest()
                                 .authenticated())
