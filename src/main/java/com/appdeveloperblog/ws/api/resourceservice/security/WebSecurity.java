@@ -23,6 +23,7 @@ public class WebSecurity {
                                 .requestMatchers(HttpMethod.GET, "/users/status/check")
 //                                .hasAuthority("SCOPE_profile")
                                 .hasRole("developer")
+//                                .hasAuthority("ROLE_developer")
 //                                .hasAnyRole("developer", "user")
                                 .anyRequest()
                                 .authenticated())
